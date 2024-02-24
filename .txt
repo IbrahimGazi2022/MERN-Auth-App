@@ -1,1 +1,1 @@
-complete react + tailwind css setup
+Shot 176 porjonto complete
