@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const SignIn = () => {
+const Profile = () => {
   return (
     <div className="max-w-lg mx-auto p-3">
       <h1 className="text-center text-3xl font-semibold my-7">Sign In</h1>
@@ -23,7 +23,7 @@ const SignIn = () => {
       </form>
       <div className="flex gap-3 mt-5">
         <p className="font-bold text-slate-600">Don't Have an account ?</p>
-        <Link to="/singup">
+        <Link to="/signup">
           <span className="text-blue-600 font-bold">Sign Up</span>
         </Link>
       </div>
@@ -31,4 +31,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default Profile;
