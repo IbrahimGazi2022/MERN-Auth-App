@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({});
+  const navigate = useNavigate();
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
@@ -18,6 +19,7 @@ const SignUp = () => {
     });
     const data = await res.json();
     console.log(data);
+    navigate("/signin");
   };
   return (
     <div className="max-w-lg mx-auto p-3">
